@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitalMate — Case Study</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: #1c1c1b !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .case-study {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 100px 20px 80px;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: #6e6e6e;
+        font-size: 13px;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+
+    .back-link:hover {
+        color: #bfbfbf;
+    }
+
+    .case-study h1 {
+        color: white !important;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 0 0 6px;
+        text-align: left;
+    }
+
+    .case-study .meta {
+        color: #6e6e6e !important;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .tag {
+        border: 1px solid #2e2e2e;
+        color: #bfbfbf !important;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+
+    .stat-row {
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid #2e2e2e;
+        border-bottom: 1px solid #2e2e2e;
+        padding: 20px 0;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat .num {
+        color: white !important;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .stat .label {
+        color: #6e6e6e !important;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .case-study h2 {
+        color: #bfbfbf !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 40px;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+
+    .case-study p {
+        color: #bfbfbf !important;
+        font-size: 15px;
+        line-height: 1.7;
+        font-weight: 300;
+        margin: 0 0 16px;
+    }
+
+    .callout {
+        color: white !important;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5;
+        border-left: 2px solid #bfbfbf;
+        padding-left: 16px;
+        margin: 30px 0;
+    }
+
+    .steps {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 16px;
+        counter-reset: step;
+    }
+
+    .steps li {
+        counter-increment: step;
+        color: #bfbfbf !important;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 300;
+        padding-left: 32px;
+        position: relative;
+        margin-bottom: 14px;
+    }
+
+    .steps li::before {
+        content: counter(step);
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+        font-weight: 700;
+        font-size: 13px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #2e2e2e;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .visit-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 6px;
+        color: white !important;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .visit-btn:hover {
+        background: white;
+        color: #111 !important;
+    }
+</style>
+</head>
+<body>
+
+<div class="case-study">
+
+    <a href="/index.html" class="back-link">← Back</a>
+
+    <h1>VitalMate</h1>
+    <p class="meta">Buildspace Nights &amp; Weekends</p>
+
+    <div class="tags">
+        <span class="tag">Concept</span>
+        <span class="tag">Figma</span>
+        <span class="tag">Health &amp; Wellness</span>
+        <span class="tag">Unshipped</span>
+    </div>
+
+    <div class="stat-row">
+        <div class="stat">
+            <span class="num">1</span>
+            <span class="label">Founder</span>
+        </div>
+        <div class="stat">
+            <span class="num">Reddit</span>
+            <span class="label">Where the audience lived</span>
+        </div>
+        <div class="stat">
+            <span class="num">Figma</span>
+            <span class="label">Where the product took shape</span>
+        </div>
+    </div>
+
+    <p class="callout">Could a small, focused app make it easier to actually stay on top of your health, without the bloat every wellness app seems to carry?</p>
+
+    <h2>The idea</h2>
+    <p>That was the question behind VitalMate. It started in the final season of Buildspace's Nights and Weekends, a program built around shipping something real in a short window of time.</p>
+
+    <h2>How it came together</h2>
+    <ul class="steps">
+        <li>Went looking for people already frustrated with existing health apps, not people who might theoretically want one. Reddit threads turned out to be full of them.</li>
+        <li>Used that feedback to sharpen what the product actually needed to do, and just as importantly, what it didn't.</li>
+        <li>Moved into Figma to turn the idea into something people could actually look at and react to. Screens, flows, an identity that felt calm rather than naggy.</li>
+    </ul>
+
+    <h2>Where it landed</h2>
+    <p>VitalMate never made it to a working build. What's live is the concept site, a snapshot of the research, the direction, and the thinking that shaped it.</p>
+
+    <a href="https://vitalmate.my.canva.site/" target="_blank" rel="noopener" class="visit-btn">Visit site ↗</a>
+
+</div>
+
+</body>
+</html>

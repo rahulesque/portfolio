@@ -1,4 +1,7 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
   background-color: #1c1c1b;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,12 +29,11 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  height: 150px;
 }
 
 .rectangle {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  min-height: 200px;
   border: 1px solid #2e2e2e;
   border-radius: 15px;
   display: flex;
@@ -50,14 +52,18 @@ h1 {
     font-family: sans-serif;
 }
 
+.project {
+    margin-bottom: 1.5rem; /* space between projects, if not already set */
+}
+
 .project h3 {
     color: #bfbfbf;
     font-size: 15px;
     text-align: left;
+    font-weight: bold !important;
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 5px;
-    font-weight: 100;
     font-family: sans-serif;
 }
 
@@ -67,7 +73,7 @@ h1 {
     text-align: left;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 80px;
+    margin-bottom: 0;
     font-weight: 100;
     font-family: sans-serif;
 }
@@ -91,4 +97,38 @@ h1 {
     font-weight: 100;
     font-family: sans-serif;
     text-decoration: underline;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+
+.project-links {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    line-height: 1;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+    background: white;
+    color: #111;
 }

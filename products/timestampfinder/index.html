@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeStampFinder — Case Study</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: #1c1c1b !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .case-study {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 100px 20px 80px;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: #6e6e6e;
+        font-size: 13px;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+
+    .back-link:hover {
+        color: #bfbfbf;
+    }
+
+    .case-study h1 {
+        color: white !important;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 0 0 6px;
+        text-align: left;
+    }
+
+    .case-study .meta {
+        color: #6e6e6e !important;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    .tag {
+        border: 1px solid #2e2e2e;
+        color: #bfbfbf !important;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+
+    .tag.live {
+        border-color: #3a5a3a;
+        color: #8fbf8f !important;
+    }
+
+    .callout {
+        color: white !important;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5;
+        border-left: 2px solid #bfbfbf;
+        padding-left: 16px;
+        margin: 0 0 40px;
+    }
+
+    .case-study h2 {
+        color: #bfbfbf !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: 40px;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+
+    .case-study p {
+        color: #bfbfbf !important;
+        font-size: 15px;
+        line-height: 1.7;
+        font-weight: 300;
+        margin: 0 0 16px;
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .feature-list li {
+        color: #bfbfbf !important;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 300;
+        padding-left: 22px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .feature-list li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: white;
+    }
+
+    .visit-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 6px;
+        color: white !important;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .visit-btn:hover {
+        background: white;
+        color: #111 !important;
+    }
+</style>
+</head>
+<body>
+
+<div class="case-study">
+
+    <a href="/index.html" class="back-link">← Back</a>
+
+    <h1>TimeStampFinder</h1>
+    <p class="meta">Chrome Extension</p>
+
+    <div class="tags">
+        <span class="tag live">In progress</span>
+        <span class="tag">Chrome Extension</span>
+        <span class="tag">YouTube</span>
+    </div>
+
+    <p class="callout">A Chrome extension that pulls timestamps out of any YouTube video, so you can jump straight to the part you actually need.</p>
+
+    <h2>What it does</h2>
+    <ul class="feature-list">
+        <li>Scans a video and surfaces its timestamps without you scrubbing through the whole thing</li>
+        <li>Works from right inside Chrome, no separate tab or site needed</li>
+        <li>Built for long videos: tutorials, podcasts, lectures, anything where the good part is buried somewhere in the middle</li>
+    </ul>
+
+    <h2>Where it's at</h2>
+    <p>Still actively being built and improved. What's live today is functional and being used, with more features on the way.</p>
+
+    <a href="https://www.timestampfinder.com" target="_blank" rel="noopener" class="visit-btn">Visit site ↗</a>
+
+</div>
+
+</body>
+</html>
